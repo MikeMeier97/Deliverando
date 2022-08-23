@@ -1,0 +1,414 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    background-color: rgb(255, 102, 0);
+}
+.headerLogo {
+    display: flex;
+    align-items: center;
+}
+.headerLogo p {
+    color: white; 
+}
+#arrowBack {
+    width: 16px;
+    margin-left: 16px;
+}
+#logo{
+    width: 32px;
+    margin-left: 16px;
+}
+.adressText {
+    font-weight: bold;
+    color: white;
+    border-bottom: solid 2px white;
+}
+#flag {
+    border: solid 4px white;
+    border-radius: 3em;
+    width: 24px;
+    margin-right: 16px;
+}
+.menu {
+    display: flex; 
+    align-items: center;
+}
+
+#menuIcon{
+    width: 24px;
+    margin-right: 16px;
+}
+.pizzaPNG {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    float: left;
+}
+.context {
+    width: 80%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.shoppingCard{
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #cccccc;
+    position: sticky;
+}
+.content {
+    display: flex;
+}
+.restaurantImg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    
+}
+.restaurantIcon {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    position: absolute;
+    top: 250px;
+    left: 35%;
+    border: 5px solid white;
+    border-radius: 5em;
+}
+.cardSidebar{ 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(245, 245 ,245);
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+    color: #666666;
+}
+.cardTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: solid 1px rgb(201, 201, 201);
+}
+.shoppingBag {
+    width: 32px;
+    margin-top: 64px;
+    margin-bottom: 16px;
+}
+.cardUndertitle{
+    font-size: 16px;
+}
+.cardText{
+    margin-top: 16px;
+    color: #777777;
+    text-align: center;
+}
+.restaurantName {
+    margin-bottom: 8px;
+   font-size: 24px;
+   font-weight: 900;
+   color: #2a3146;
+}
+.star {
+    width: 20px;
+}
+.reception{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.reception p {
+    margin-left: 8px;
+    color:rgb(255, 102, 0);
+    text-decoration: underline;
+}
+.deliverInformation{    
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 8px;
+}
+
+.infoIcon{
+    object-fit: cover;
+    width: 16px;
+    margin-right: 4px;
+}
+.iconText{
+    font-size: 14px;
+    color: #666666;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.deliverIcon {
+    object-fit: cover;
+    display: flex;
+    margin-right: 4px;
+    width: 25px;
+}
+.bagIcon{
+    object-fit: cover;
+    margin-right: 4px;
+    width: 20px;
+}
+nav {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    background-color: #f1f1f1;
+    height: 50px;
+}
+.searchIcon {
+    width: 18px;
+}
+nav a {
+    padding-left: 30px;
+    color:#2a3146;
+    text-decoration: none;
+}
+
+.highlighted{
+    color: white;
+    padding: 10px; 
+    margin-left: 30px;
+    border-radius: 5em;
+    background-color: rgb(255, 102, 0);
+}
+.mealTitle {
+    width: 100%;
+    margin-bottom: 20px; 
+    margin-top: 0;
+    color:#2a3146;
+    display: flex;
+    align-items: center; 
+    background-color: #f1f1f1;
+}
+.mealTitle h4{
+    padding: 15px; 
+}
+.mealCard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color:#2a3146;
+    width: 100%;
+    border: 1px solid rgb(218, 218, 218);
+    margin-bottom: 20px;
+}
+.mealCard h4 {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.addBotton {
+    font-size: 26px;
+    position: absolute;
+    top: 5px; 
+    right: 15px;
+    display: flex; 
+    justify-content: flex-end;
+    width: 20px;
+}
+.addBotton:hover {
+    color: black;
+    cursor: pointer;
+}
+.mealCard:hover {
+    border: 1px solid #2a3146;
+}
+.price {
+    color: #FB6100;
+}
+.mealCard p {
+    
+    margin-left: 15px; 
+    color:rgb(109, 109, 109);
+}
+
+.mealTitleImg{
+    width: 100%;
+    margin-bottom: 0;
+    height: 100px; 
+    object-fit: cover;
+}
+.contentWidth {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.informations {
+    width: 80%;
+}
+footer {
+    z-index: 1;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #083343;
+    width: 100%;
+    height: 125px; 
+}
+footer a {
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 20px; 
+    color: white; 
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer p {
+    font-size: 12px;
+    margin-top: 15px; 
+    color: white; 
+}
+.email{
+    text-decoration: none;
+}
+.impressum {
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 20px; 
+}
+
+.hoverBottom:hover{
+    cursor: pointer;
+    color: black; 
+}
+.dishes {
+    width: 100%;
+}
+#dishesTitle {
+    width: 100%;
+}
+.basket-upper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 16px 0 48px 0; 
+    border-bottom: 1px solid #D7D7D7;
+}
+
+.basket-left {
+    display: flex;
+}
+
+.font {
+    font-size: 14px;
+}
+
+.basket-amount {
+    margin-right: 16px;
+}
+
+.basket-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.basket-dish-description {
+    width: 90%;
+    font-size: 10px;
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.delete-dish {
+    height: 24px;
+}
+
+.basket-change-amount {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+}
+
+.basket-plus {
+    height: 16px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #EBEBEB;
+}
+
+.basket-minus {
+    height: 16px;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: #EBEBEB;
+}
+
+.basket-calc {
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paybutton {
+    padding: 16px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #EBEBEB;
+
+}
+.cursor {
+    cursor: pointer;
+}
+.full-basket {
+    background-color: rgb(245, 245 ,245);
+}
+
+.shoppingCard {
+    background-color: rgb(245, 245 ,245);
+    height: 100vh;
+}
+.full-basket h1 {
+    font-size: 26px;
+    color:#2c2c2c;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+.basket-calc-right h4 {
+    margin-top: 16px;
+}
+.basket-calc-left h4 {
+    margin-top: 16px;
+}
+.paybuttonActive {
+    background-color: #083343;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
