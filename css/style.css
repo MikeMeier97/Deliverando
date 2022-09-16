@@ -175,7 +175,7 @@
 nav { 
     max-width: 100%;
     white-space: none;
-    overflow-x: auto;
+    overflow-x: none;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     display: flex; 
